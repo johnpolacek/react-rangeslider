@@ -8,12 +8,58 @@ exports[`Rangeslider specs should render basic slider with defaults 1`] = `
   onMouseDown={[Function anonymous]}
   onMouseUp={[Function anonymous]}
   onTouchEnd={[Function anonymous]}
-  onTouchStart={[Function anonymous]}>
+  onTouchStart={[Function anonymous]}
+  style={Object {}}>
   <div
     className="rangeslider__fill"
     style={
       Object {
         "width": "0px"
+      }
+    } />
+  <div
+    className="rangeslider__handle"
+    onKeyDown={[Function anonymous]}
+    onMouseDown={[Function anonymous]}
+    onTouchEnd={[Function anonymous]}
+    onTouchMove={[Function anonymous]}
+    style={
+      Object {
+        "left": "0px"
+      }
+    }
+    tabIndex={0}>
+    <div
+      className="rangeslider__handle-label">
+      
+    </div>
+  </div>
+  <ul
+    className="rangeslider__labels" />
+</div>
+`;
+
+exports[`Rangeslider specs should render slider when color props passed in 1`] = `
+<div
+  aria-orientation="horizontal"
+  aria-valuemax={50}
+  aria-valuemin={10}
+  aria-valuenow={20}
+  className="rangeslider rangeslider-horizontal"
+  onMouseDown={[Function anonymous]}
+  onMouseUp={[Function anonymous]}
+  onTouchEnd={[Function anonymous]}
+  onTouchStart={[Function anonymous]}
+  style={
+    Object {
+      "background": "#abcdef"
+    }
+  }>
+  <div
+    className="rangeslider__fill"
+    style={
+      Object {
+        "background": "#123456"
       }
     } />
   <div
@@ -48,7 +94,8 @@ exports[`Rangeslider specs should render slider when props passed in 1`] = `
   onMouseDown={[Function anonymous]}
   onMouseUp={[Function anonymous]}
   onTouchEnd={[Function anonymous]}
-  onTouchStart={[Function anonymous]}>
+  onTouchStart={[Function anonymous]}
+  style={Object {}}>
   <div
     className="rangeslider__fill"
     style={

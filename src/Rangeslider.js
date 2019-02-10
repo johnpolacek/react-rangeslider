@@ -37,6 +37,8 @@ class Slider extends Component {
     reverse: PropTypes.bool,
     labels: PropTypes.object,
     handleLabel: PropTypes.string,
+    fillColor: PropTypes.string,
+    backgroundColor: PropTypes.string,
     format: PropTypes.func,
     onChangeStart: PropTypes.func,
     onChange: PropTypes.func,
@@ -346,8 +348,9 @@ class Slider extends Component {
         aria-valuemax={max}
         aria-valuenow={value}
         aria-orientation={orientation}
+        style={this.props.backgroundColor ? {background: this.props.backgroundColor} : {}}
       >
-        <div className='rangeslider__fill' style={fillStyle} />
+        <div className='rangeslider__fill' style={this.props.fillColor ? {background: this.props.fillColor} : fillStyle} />
         <div
           ref={sh => {
             this.handle = sh

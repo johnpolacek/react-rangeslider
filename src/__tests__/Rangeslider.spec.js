@@ -35,4 +35,11 @@ describe('Rangeslider specs', () => {
       .toJSON()
     expect(tree).toMatchSnapshot()
   })
+
+  it('should render slider when color props passed in', () => {
+    const tree = renderer
+      .create(<Slider min={10} max={50} value={20} fillColor='#123456' backgroundColor='#abcdef' />)
+      .toJSON()
+    expect(tree).toMatchSnapshot()
+  })
 })
